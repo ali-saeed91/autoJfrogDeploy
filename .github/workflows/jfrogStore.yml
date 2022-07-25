@@ -5,8 +5,8 @@ jobs:
     name: Upload Trigger
     runs-on: ubuntu-latest
     steps:
-    - name: Copy repo files
-    - uses: actions/checkout@v1.2.0
+    - name: Checkout the code
+      uses: actions/checkout@v1
     
     - name: publish to artifactory
       uses: advancedcsg-open/action-jfrog-cli@master
