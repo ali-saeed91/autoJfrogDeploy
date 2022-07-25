@@ -1,0 +1,16 @@
+name: JFrog CLI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Artifactory
+        uses: katcosgrove/jfrog-actions@master
+        with:
+            cmd: 'ping'
+        env:
+            auth: 'alisaeed'
+            apikey: 'AKCp8mZn3SqbErr15JjvPT5R9fBY5bbgHabLmqn81ronf9ERuFkuoscBV4qbYvf3vgtPDAKLc'
+            url: 'https://alisaeed.jfrog.io'
