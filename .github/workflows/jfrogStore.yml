@@ -7,11 +7,11 @@ jobs:
     steps:
     - uses: actions/checkout@v1.2.0
     - name: build
-      run: touch test.txt
+      run: touch test.zip
     - name: publish to artifactory
       uses: advancedcsg-open/action-jfrog-cli@master
       with:
         url: 'https://alisaeed.jfrog.io/'
         credentials type: 'apikey'
         apikey: 'AKCp8mZn3SqbErr15JjvPT5R9fBY5bbgHabLmqn81ronf9ERuFkuoscBV4qbYvf3vgtPDAKLc'
-        args: u "test.txt" "/artifactory/example-repo-local/" --recursive=false
+        args: u "(*).zip" "/artifactory/example-repo-local/" --recursive=false
