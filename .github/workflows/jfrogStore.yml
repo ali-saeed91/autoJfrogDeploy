@@ -14,4 +14,4 @@ jobs:
         url: 'https://alisaeed.jfrog.io/'
         credentials type: 'apikey'
         apikey: 'AKCp8mZn3SqbErr15JjvPT5R9fBY5bbgHabLmqn81ronf9ERuFkuoscBV4qbYvf3vgtPDAKLc'
-        args: u "*.zip" "/artifactory/example-repo-local/" --recursive=true
+        args: u "(*.zip)" "/artifactory/example-repo-local/" --recursive=true
